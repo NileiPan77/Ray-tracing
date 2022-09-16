@@ -4,7 +4,7 @@
 
 Developed in c++ with stb_image library.
 
-**Target Platform: ** Linux
+**Target Platform**: Linux
 
 **Usage:** 
 
@@ -18,7 +18,11 @@ Developed in c++ with stb_image library.
 
 **Refraction:** Before/After
 
-<img src=".\ spheres4.png" alt="woRefraction" style="zoom: 33%;" /><img src=".\ spheres5.png" alt=" spheres5" style="zoom: 33%;" />
+```
+![refrac](/ sphere4.jpg?raw=true "without refraction")
+```
+
+<img src=".\ spheres5.png" alt=" spheres5" style="zoom: 33%;" />
 
 
 
