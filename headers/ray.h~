@@ -1,0 +1,79 @@
+#ifndef RAY_H_
+#define RAY_H_
+
+#include "vec3.h"
+#include "image.h"
+
+struct rgb{
+  double r;
+  double g;
+  double b;
+
+  rgb(){
+    r = g = b = 0.0;
+  }
+  
+  rgb(Pixel& p){
+    this->r = p.r/255.0;
+    this->g = p.g/255.0;
+    this->b = p.b/255.0;
+  }
+  
+  rgb &operator+(const rgb& that){
+    if(this != &that){
+      this->r += that.r;
+      this->g += that.g;
+      this->b += that.b;
+    }
+    return *this;
+  }
+  
+  void multi(double multiplyer){
+    this->r *= multiplyer;
+    this->g *= multiplyer;
+    this->b *= multiplyer;
+  }
+  
+  Pixel transform(){
+    return Pixel(ComponentClamp(r*255),
+		 ComponentClamp(g*255),
+		 ComponentClamp(b*255));
+  }
+};
+
+class ray{
+ private:
+  vec3 direction;
+  rgb color;
+  
+ public:
+  ray(){}
+
+  ray(vec3 d, rgb c){
+    direction = d;
+    rgb = c;
+  }
+
+  void setDirection(vec3 d){
+    direction = d;
+  }
+  void setColor(rgb c){
+    color = c;
+  }
+
+  vec3 getDirection(){
+    return direction;
+  }
+  
+  rgb getColor(){
+    return color;
+  }
+
+};
+
+class spotRay: public ray{
+  
+
+};
+
+#endif   //RAY_H_
