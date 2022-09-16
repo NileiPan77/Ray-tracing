@@ -18,17 +18,15 @@ Developed in c++ with stb_image library.
 
 **Refraction:** Before/After
 
-```
-![refrac](/ sphere4.jpg?raw=true "without refraction")
-```
+<img src=".\spheres4.png" alt=" spheres5" style="zoom: 33%;" />
 
-<img src=".\ spheres5.png" alt=" spheres5" style="zoom: 33%;" />
+<img src=".\spheres5.png" alt=" spheres5" style="zoom: 33%;" />
 
 
 
 **Jittered Supersampling:** Before/After
 
-<img src=".\ gear.png" alt=" gear" style="zoom: 33%;" /><img src=".\ gear2.png" alt=" gear2" style="zoom: 33%;" />
+<img src=".\gear.png" alt=" gear" style="zoom: 33%;" /><img src="./gear2.png" alt=" gear2" style="zoom: 33%;" />
 
 **Optimization:**
 
